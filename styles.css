@@ -18,6 +18,35 @@ header {
   margin-right: 10px;
 }
 
+/* Tu CSS existente para la navegación aquí */
+
+.menu-toggle {
+  display: none; /* Por defecto oculto en pantallas grandes */
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px auto;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .nav ul {
+      display: none; /* Ocultar lista en pantallas pequeñas */
+  }
+
+  .menu-toggle {
+      display: block; /* Mostrar icono del menú en pantallas pequeñas */
+  }
+
+  .nav.active ul {
+      display: block; /* Mostrar lista cuando se activa el menú */
+  }
+}
+
 nav ul {
   list-style: none;
   padding: 0;
@@ -51,16 +80,17 @@ nav ul li a:hover {
 
 .banner-texto {
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
 }
 
 .banner-texto h1 {
-  font-size: 2.5em;
+  font-size: 3vw;
   margin: 0; /* Agrega esto para quitar el margen predeterminado del h1 */
 }
 
@@ -90,12 +120,20 @@ section#aportes {
   padding: 20px;
 }
 
+section#contacto iframe {
+  width: calc(100% - 20px); /* Calcula el ancho restando 20px (10px de cada lado) */
+  margin: 10px;
+  border: none; /* Elimina el borde predeterminado del iframe */
+}
+
 .vision-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
   margin: 100px auto 0; /* Se añade un margen de 20px en la parte superior */
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .vision-text {

@@ -1,8 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("copiarBtn").addEventListener("click", function() {
-        var texto = document.getElementById("datosDeposito");
-        texto.select();
-        document.execCommand("copy");
-        alert("¡Texto copiado!");
+$(document).ready(function(){
+    $(".menu-toggle").click(function(){
+        $(".nav").toggleClass("active"); // Toggle la clase 'active' en la navegación
     });
 });
