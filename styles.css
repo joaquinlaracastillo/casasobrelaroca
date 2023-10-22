@@ -1,0 +1,146 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 50px; /* Ajusta la altura del logo según tus necesidades */
+  margin-right: 10px; /* Espacio entre el logo y la lista de navegación */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+section {
+  padding: 20px;
+}
+
+section#inicio {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+section#transmisiones,
+section#contacto,
+section#aportes {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.videos iframe {
+  flex: 0 0 calc(33.33% - 10px); /* 33.33% para que haya tres en la fila y -10px para el espacio entre ellos */
+  margin-bottom: 10px;
+}
+
+#descargaApp {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.app-image {
+  flex: 1;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.app-image img {
+  width: 100%;
+  height: auto;
+}
+
+.app-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.app-text h3 {
+  font-size: 1.5em; /* Ajusta el tamaño según tus preferencias */
+  margin-bottom: 5px;
+}
+
+.app-text p {
+  font-size: 0.9em; /* Ajusta el tamaño según tus preferencias */
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.social-links,
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.social-links h3,
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
