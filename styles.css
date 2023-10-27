@@ -6,11 +6,15 @@ body {
 }
 
 header {
-  background-color: #483480b4;
+  background-color: #000000; /* Cambiado a un color sólido sin transparencia */
   color: #fff;
   padding: 10px;
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo img {
@@ -71,11 +75,21 @@ nav ul li a:hover {
   color: #ccc;
 }
 
-.banner {
-    position: relative;
-    width: 100%;
-    max-height: 500px; /* Ajusta la altura máxima según sea necesario */
-    overflow: hidden; /* Oculta el desbordamiento de la imagen */
+#inicio {
+  margin-top: 80px; /* Agrega un margen superior para dejar espacio debajo del header */
+  text-align: center; /* Centra el texto */
+  position: relative; /* Establece la posición relativa para posicionar el texto */
+}
+
+#inicio {
+  margin-top: 80px;
+  text-align: center;
+  position: relative;
+}
+
+#inicio img {
+  max-width: 100%;
+  height: auto;
 }
 
 .banner-texto {
@@ -83,25 +97,20 @@ nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2vw; /* Usa unidades de viewport para el padding */
+  border-radius: 10px;
+  max-width: 70%; /* Establece un ancho máximo para el texto */
 }
 
 .banner-texto h1 {
-  font-size: 3vw;
-  margin: 0; /* Agrega esto para quitar el margen predeterminado del h1 */
+  color: #fff;
+  font-size: 2vw; /* Usa unidades de viewport para el tamaño de fuente */
+  margin: 0;
 }
 
 
-#inicio img {
-  width: 100%; /* 100% del ancho de la ventana del navegador */
-  height: 100%; /* Se ajusta automáticamente la altura para mantener la proporción */
-  object-fit: cover; /* Cubre el contenedor manteniendo la proporción */
-  object-position: center; /* Centra la imagen */
-  opacity: 0.7; /* Reduciendo la opacidad */
-}
+
 
 section#inicio h2{
   color: #ffffff;
@@ -131,19 +140,32 @@ section#contacto iframe {
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
-  margin: 100px auto 0; /* Se añade un margen de 20px en la parte superior */
+  margin: 100px auto 0; 
   border-radius: 10px;
   padding: 20px;
 }
 
 .vision-text {
   max-width: 50%;
-  font-size: 1.2em; /* Ajusta el tamaño de letra según sea necesario */
+  font-size: 1.2em;
 }
 
 .vision-image img {
   max-width: 100%;
 }
+
+@media (max-width: 767px) {
+  .vision-section {
+    flex-direction: column;
+  }
+
+  .vision-text,
+  .vision-image {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
 
 .redes-sociales {
     text-align: center;
